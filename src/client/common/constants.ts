@@ -13,7 +13,7 @@ export const PYTHON = [
 ];
 export const PYTHON_ALLFILES = [{ language: PYTHON_LANGUAGE }];
 
-export const PVSC_EXTENSION_ID = 'ms-python.python';
+export const PVSC_EXTENSION_ID = 'libre-code.python';
 export const CODE_RUNNER_EXTENSION_ID = 'formulahendry.code-runner';
 export const PYLANCE_EXTENSION_ID = 'ms-python.vscode-pylance';
 export const JUPYTER_EXTENSION_ID = 'ms-toolsai.jupyter';

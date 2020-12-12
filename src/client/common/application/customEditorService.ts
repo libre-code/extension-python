@@ -11,7 +11,7 @@ import { noop } from '../utils/misc';
 import { CustomEditorProvider, ICommandManager, ICustomEditorService, IWorkspaceService } from './types';
 
 const EditorAssociationUpdatedKey = 'EditorAssociationUpdatedToUseCustomEditor';
-const ViewType = 'ms-python.python.notebook.ipynb';
+const ViewType = 'libre-code.python.notebook.ipynb';
 
 @injectable()
 export class CustomEditorService implements ICustomEditorService {

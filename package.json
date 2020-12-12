@@ -7,21 +7,20 @@
         "usingNewInterpreterStorage": true
     },
     "languageServerVersion": "0.5.30",
-    "publisher": "ms-python",
+    "publisher": "libre-code",
     "enableProposedApi": true,
     "author": {
-        "name": "Microsoft Corporation"
+        "name": "Libre Code"
     },
     "license": "MIT",
-    "homepage": "https://github.com/Microsoft/vscode-python",
+    "homepage": "https://github.com/libre-code/python",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Microsoft/vscode-python"
+        "url": "https://github.com/libre-code/python"
     },
     "bugs": {
-        "url": "https://github.com/Microsoft/vscode-python/issues"
+        "url": "https://github.com/libre-code/python/issues"
     },
-    "qna": "https://stackoverflow.com/questions/tagged/visual-studio-code+python",
     "icon": "icon.png",
     "galleryBanner": {
         "color": "#1e415e",
@@ -1986,6 +1985,7 @@
         "webpack": "webpack"
     },
     "dependencies": {
+        "@libre-code/intercept-extension-telemetry": "^0.1.6",
         "arch": "^2.1.0",
         "azure-storage": "^2.10.3",
         "chokidar": "^3.4.3",
@@ -2026,7 +2026,6 @@
         "untildify": "^3.0.2",
         "vscode-debugadapter": "^1.28.0",
         "vscode-debugprotocol": "^1.28.0",
-        "vscode-extension-telemetry": "0.1.4",
         "vscode-jsonrpc": "6.0.0-next.7",
         "vscode-languageclient": "7.0.0-next.14",
         "vscode-languageserver": "7.0.0-next.11",

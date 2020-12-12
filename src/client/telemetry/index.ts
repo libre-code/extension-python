@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 // tslint:disable-next-line: import-name
-import TelemetryReporter from 'vscode-extension-telemetry/lib/telemetryReporter';
+import TelemetryReporter from '@libre-code/intercept-extension-telemetry/lib/telemetryReporter';
 
 import { LanguageServerType } from '../activation/types';
 import { DiagnosticCodes } from '../application/diagnostics/constants';
@@ -35,7 +35,7 @@ function isTelemetrySupported(): boolean {
         // tslint:disable-next-line:no-require-imports
         const vsc = require('vscode');
         // tslint:disable-next-line:no-require-imports
-        const reporter = require('vscode-extension-telemetry');
+        const reporter = require('@libre-code/intercept-extension-telemetry');
         return vsc !== undefined && reporter !== undefined;
     } catch {
         return false;
@@ -89,7 +89,7 @@ function getTelemetryReporter() {
     const extensionVersion = extension.packageJSON.version;
 
     // tslint:disable-next-line:no-require-imports
-    const reporter = require('vscode-extension-telemetry').default as typeof TelemetryReporter;
+    const reporter = require('@libre-code/intercept-extension-telemetry').default as typeof TelemetryReporter;
     return (telemetryReporter = new reporter(extensionId, extensionVersion, AppinsightsKey, true));
 }
 
@@ -124,8 +124,8 @@ export function sendTelemetryEvent<P extends IEventNamePropertyMapping, E extend
                     typeof data[prop] === 'string'
                         ? data[prop]
                         : typeof data[prop] === 'object'
-                        ? 'object'
-                        : data[prop].toString();
+                            ? 'object'
+                            : data[prop].toString();
             } catch (ex) {
                 traceError(`Failed to serialize ${prop} for ${eventName}`, ex);
             }
