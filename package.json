@@ -13,13 +13,13 @@
         "name": "Libre Code"
     },
     "license": "MIT",
-    "homepage": "https://github.com/libre-code/python",
+    "homepage": "https://github.com/libre-code/extension-python",
     "repository": {
         "type": "git",
-        "url": "https://github.com/libre-code/python"
+        "url": "https://github.com/libre-code/extension-python"
     },
     "bugs": {
-        "url": "https://github.com/libre-code/python/issues"
+        "url": "https://github.com/libre-code/extension-python/issues"
     },
     "icon": "icon.png",
     "galleryBanner": {
